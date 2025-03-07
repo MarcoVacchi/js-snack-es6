@@ -52,10 +52,10 @@ let result = document.getElementById("result");
 //console.log(lighterBike)
 
 
-for (let key in bicycle){
+for (let i = 0; i < bicycle.length; i++){
 
-    const bicycleValue = bicycle[key].weidth;
-    const bicycleValueName = bicycle[key].name;
+    const bicycleValue = bicycle[i].weidth;
+    const bicycleValueName = bicycle[i].name;
    //console.log(bicycleValue);
    // console.log(lighterBike)
 
