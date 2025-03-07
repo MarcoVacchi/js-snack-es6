@@ -11,28 +11,28 @@ const bicycle = [
 
     {
         name : "bianchi",
-        weidth : "20"
+        weidth : 20
     },
 
     
     {
         name : "verdi",
-        weidth : "23"
+        weidth : 23
     },
     
     {
         name : "rossi",
-        weidth : "10"
+        weidth : 10
     },
     
     {
         name : "gialli",
-        weidth : "3"
+        weidth : 3
     },
 
     {
         name : "viola",
-        weidth : "5"
+        weidth : 5
     },
 
 
@@ -41,18 +41,27 @@ const bicycle = [
 //console.log(bicycle);
 //console.log(bicycle[0].name, bicycle[1].name, bicycle[2].name, bicycle[3].name, bicycle[4].name);
 
+//creo una variabile per prendere la bici più leggera e usarla come paragone;
+
+let lighterBike = bicycle[0]["weidth"];
+let lighterName = bicycle[0]["name"];
+//console.log(lighterBike)
+
+//console.log(lighterBike)
+
 
 for (let key in bicycle){
 
-    const bicycleValue = bicycle[key]["weidth"];
-    //console.log(bicycleValue);
+    const bicycleValue = bicycle[key].weidth;
+    const bicycleValueName = bicycle[key].name;
+   //console.log(bicycleValue);
+   // console.log(lighterBike)
 
-
-
-    
-
-    //console.log(bicycleValue);
-
+    if (bicycleValue < lighterBike) {
+        lighterBike = bicycleValue;
+        lighterName = bicycleValueName;
+    }
+   // console.log(lighterBike);
 }
-
+console.log(`La bici col peso più leggero è ${lighterName} con un peso di ${lighterBike}`);
 
