@@ -59,10 +59,10 @@ function randomNumber() {
 
 // ciclo per prelevare i punti e i falli
 
-for (let key  in club){
+for (let i = 0; i < club.length; i++){
 
-    club[key]["puntiFatti"] = randomNumber();
-    club[key]["falliSubiti"] = randomNumber();
+    club[i]["puntiFatti"] = randomNumber();
+    club[i]["falliSubiti"] = randomNumber();
    
 }
 console.log(club);
@@ -70,14 +70,15 @@ console.log(club);
 // creo il nuovo array per metterci i nuovi elementi(nomi e falli subiti); 
 
 let secondClub = [];
+let resultInner = document.getElementById("result"); 
 
 // console.log(secondClub);
 
-for (let key in club){
+for (let i = 0; i < club.length; i++){
     // console.log(club[key]);
     const result = {
-        nome: club[key].nome,
-        falliSubiti: club[key].falliSubiti
+        nome: club[i].nome,
+        falliSubiti: club[i].falliSubiti
     }
     secondClub.push(result);
 
@@ -88,10 +89,11 @@ for (let key in club){
 
    // secondClub.push(club[key].nome);
    // secondClub.push(club[key].falliSubiti);
-    
+   resultInner.innerHTML += `Squadra: ${result.nome} Falli subiti: ${result.falliSubiti} <br> `;
 }
-
+   
 console.log(secondClub);
+
 
 
 
