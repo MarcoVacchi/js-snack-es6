@@ -41,10 +41,17 @@ const bicycle = [
 //console.log(bicycle);
 //console.log(bicycle[0].name, bicycle[1].name, bicycle[2].name, bicycle[3].name, bicycle[4].name);
 
+
 for (let key in bicycle){
 
-    const bicycleValue = bicycle[key];
-    console.log(bicycleValue);
+    const bicycleValue = bicycle[key]["weidth"];
+    //console.log(bicycleValue);
+
+
+
+    
+
+    //console.log(bicycleValue);
 
 }
 
