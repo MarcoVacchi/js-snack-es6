@@ -67,7 +67,32 @@ for (let key  in club){
 }
 console.log(club);
 
-const secondClub = []
+// creo il nuovo array per metterci i nuovi elementi(nomi e falli subiti); 
+
+let secondClub = [];
+
+// console.log(secondClub);
+
+for (let key in club){
+    // console.log(club[key]);
+    const result = {
+        nome: club[key].nome,
+        falliSubiti: club[key].falliSubiti
+    }
+    secondClub.push(result);
+
+    /*secondClub.push({
+        nome: club[key].nome,
+        falliSubiti: club[key].falliSubiti
+    });*/
+
+   // secondClub.push(club[key].nome);
+   // secondClub.push(club[key].falliSubiti);
+    
+
+}
+
+console.log(secondClub);
 
 
 
