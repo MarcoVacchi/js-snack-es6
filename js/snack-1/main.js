@@ -45,6 +45,8 @@ const bicycle = [
 
 let lighterBike = bicycle[0]["weidth"];
 let lighterName = bicycle[0]["name"];
+let result = document.getElementById("result");
+
 //console.log(lighterBike)
 
 //console.log(lighterBike)
@@ -64,4 +66,5 @@ for (let key in bicycle){
    // console.log(lighterBike);
 }
 console.log(`La bici col peso più leggero è ${lighterName} con un peso di ${lighterBike}`);
+result.innerHTML = `La bici col peso più leggero è ${lighterName} con un peso di ${lighterBike}`;
 
