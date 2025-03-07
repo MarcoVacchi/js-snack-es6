@@ -89,7 +89,7 @@ for (let i = 0; i < club.length; i++){
 
    // secondClub.push(club[key].nome);
    // secondClub.push(club[key].falliSubiti);
-   resultInner.innerHTML += `Squadra: ${result.nome} Falli subiti: ${result.falliSubiti} <br> `;
+   resultInner.innerHTML += `<li>Squadra: ${result.nome}</li> <li> Falli subiti: ${result.falliSubiti} </li> <br> `;
 }
    
 console.log(secondClub);
